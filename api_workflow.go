@@ -74,7 +74,7 @@ type StreamingResponse struct {
 		ElapsedTime       float64                `json:"elapsed_time,omitempty"`
 		ExecutionMetadata struct {
 			TotalTokens int     `json:"total_tokens,omitempty"`
-			TotalPrice  float64 `json:"total_price,omitempty"`
+			TotalPrice  string  `json:"total_price,omitempty"`
 			Currency    string  `json:"currency,omitempty"`
 		} `json:"execution_metadata,omitempty"`
 		CreatedAt  int64 `json:"created_at"`
