@@ -67,7 +67,7 @@ type StreamingResponse struct {
 		Title             string                 `json:"title,omitempty"`
 		Index             int                    `json:"index"`
 		Predecessor       string                 `json:"predecessor_node_id,omitempty"`
-		Inputs            []interface{}          `json:"inputs,omitempty"`
+		Inputs            map[string]interface{} `json:"inputs,omitempty"`
 		Outputs           map[string]interface{} `json:"outputs,omitempty"`
 		Status            string                 `json:"status,omitempty"`
 		Error             string                 `json:"error,omitempty"`
